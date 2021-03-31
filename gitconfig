@@ -48,4 +48,9 @@
   mergeoptions = --no-edit
 [user]
 	email = wind_guizmo@hotmail.fr
-	name = Guillaume Morin
+	name = guillaume morin
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
